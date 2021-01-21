@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>{{ title }} - Tom's Pet Shop</title>
+</head>
+<body>
+    <h1 id="tps">Tom's Pet Shop</h1>
+    {% for order in orders%}
+    <div>
+        <p>
+            <b>Name: {{ order.customer_name }} | Order Date: {{ order.order_date }} | Order Description: {{ order.item_description }} | Quantity: {{ order.quantity }}</b>
+        </p>
+    </div>
+    {% endfor %}
+    
+</body>
+</html>
