@@ -7,8 +7,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>{{ title }} - Tom's Pet Shop</title>
+
+    <style type="text/css">
+        <!--
+        /* @group Blink */
+        .blink {
+            -webkit-animation: blink .1s linear infinite;
+            -moz-animation: blink .1s linear infinite;
+            -ms-animation: blink .1s linear infinite;
+            -o-animation: blink .1s linear infinite;
+             animation: blink .1s linear infinite;
+        }
+        @-webkit-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 1; }
+            50.01% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        @-moz-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 1; }
+            50.01% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        @-ms-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 1; }
+            50.01% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        @-o-keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 1; }
+            50.01% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 1; }
+            50.01% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        /* @end */
+        -->
+        </style>
 </head>
-<body>
+<body class="tab blink">
     <h1 id="tps">Tom's Pet Shop</h1>
     {% for order in orders%}
     <div>
